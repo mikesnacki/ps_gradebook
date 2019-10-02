@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace gradebook
+namespace Gradebook
 {
-    class Book
+    public class Book
     {
         private List<double> grades;
-        private string name;
+        public string Name;
 
         public Book(string name)
         {
             grades = new List<double>();
-            this.name = name;
+            Name = name;
         }
 
         public void AddGrade(double grade)
@@ -20,23 +20,23 @@ namespace gradebook
             grades.Add(grade);
         }
 
-        public void ShowStatistics()
+        public Statistics GetStatistics()
         {
-            double result = 0.0;
-            double average;
-            double highGrade = double.MinValue;
-            double lowGrade = double.MaxValue;
+            var result = new Statistics();
+            result.Average = 0.0;
+            result.High = double.MinValue;
+            result.Low = double.MaxValue;
 
-            foreach (double grade in grades)
+            foreach (var grade in grades)
             {
-                result += grade;
-                highGrade = Math.Max(grade, highGrade);
-                lowGrade = Math.Min(grade, lowGrade);
+                result.Average += grade;
+                result.High = Math.Max(grade, result.High);
+                result.Low = Math.Min(grade, result.Low);
             }
-            average = result / grades.Count;
 
-            Console.WriteLine($"The lowest is {lowGrade}, the average is {average} the highest is {highGrade}");
+            result.Average /= grades.Count;
+
+            return result;
         }
-
     }
 }
