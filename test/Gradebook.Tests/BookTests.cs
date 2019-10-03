@@ -5,6 +5,30 @@ namespace Gradebook.Tests
 {
     public class BookTest
     {
+        int count = 0;
+        public delegate string WriteLogDelegateCanPoint(string message);
+
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+        //Given
+        WriteLogDelegateCanPoint log = ReturnValue;
+        log+=ReturnValue;
+        
+        //When
+        var result =  log("Hello");
+        
+        //Then
+        Assert.Equal("Hello", result);
+        }
+
+
+        public string ReturnValue(string message)
+        {   
+            count++;
+            return message;
+        }
+
         [Fact]
         public void BookCaclulatesStats()
         {   

@@ -4,10 +4,17 @@ using System.Text;
 
 namespace Gradebook
 {
+    public delegate void GradeAddedDelegate(pbject sender, EventArgs args);
     public class Book
     {
         private List<double> grades;
-        public string Name;
+        private string name;
+
+        public string Name
+        {
+            get;
+            set;
+        }
 
         public Book(string name)
         {
@@ -39,7 +46,10 @@ namespace Gradebook
             if (grade >= 0 && grade <= 100) 
             {
                 grades.Add(grade);
-                Console.WriteLine($"Grade of {grade} added");
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, EventArgs());
+                }
             }
             else 
             {
@@ -47,6 +57,8 @@ namespace Gradebook
                 Console.WriteLine("Invalid grade");
             }
         }
+
+        public event GradeAddedDelegate GradeAdded;
 
         public Statistics GetStatistics()
         {
