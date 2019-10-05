@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
+    "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj": {
+    "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj",
+        "projectUniqueName": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj",
         "projectName": "gradebook",
-        "projectPath": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj",
+        "projectPath": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj",
         "packagesPath": "C:\\Users\\mikes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\obj\\",
+        "outputPath": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -60,14 +60,14 @@
         }
       }
     },
-    "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
+    "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "projectName": "Gradebook.Tests",
-        "projectPath": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectPath": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "packagesPath": "C:\\Users\\mikes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\obj\\",
+        "outputPath": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\test\\Gradebook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -87,8 +87,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj": {
-                "projectPath": "C:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj"
+              "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj": {
+                "projectPath": "c:\\Users\\mikes\\source\\repos\\pluralsight\\Gradebook\\src\\Gradebook\\gradebook.csproj"
               }
             }
           }

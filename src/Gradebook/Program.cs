@@ -7,8 +7,23 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            var book = new Book("Mike's book");
+            IBook book = new BookDisk("Mike's book");
+            book.GradeAdded+=OnGradeAdded;
 
+            EnterGrade(book);
+
+            var stats = book.GetStatistics();
+
+            static void OnGradeAdded(object sender, EventArgs e)
+            {
+                Console.WriteLine("Grade was added");
+            } 
+
+            Console.WriteLine($"The lowest is {stats.Low:N1}, \nthe average is {stats.Average:N1}, \nthe highest is {stats.High:N1}\nThe letter is {stats.Letter}");
+        }
+
+        static void EnterGrade(IBook book)
+        {
             while(true)
             {
                 Console.WriteLine("Enter grades, type 'q' or 'quit to stop\n");
@@ -31,19 +46,8 @@ namespace Gradebook
                 catch(FormatException ex)
                 {
                     Console.WriteLine(ex.Message);
-                }
-                    
+                }    
             }
-
-            var stats = book.GetStatistics();
-            static void OnGradeAdded(object sender, EventArgs e)
-            {
-                Console.WriteLine("Grade was added");
-            } 
-
-            Console.WriteLine($"The lowest is {stats.Low:N1}, \nthe average is {stats.Average:N1}, \nthe highest is {stats.High:N1}\n the letter is {stats.Letter}");
         }
     }
-
-    
 }

@@ -33,7 +33,7 @@ namespace Gradebook.Tests
         public void BookCaclulatesStats()
         {   
             //arrange - variable declaration
-            var book = new Book("");
+            var book = new BookInMemory("");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
